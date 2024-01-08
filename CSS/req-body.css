@@ -1,0 +1,18 @@
+img {
+    width: 250px; /* Ajusta este valor según tus necesidades */
+    height: auto;
+}
+
+div .req-selection{
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+.go-to-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4672a1; /* Color de fondo */
+    color: #FFF; /* Color del texto */
+    text-decoration: none;
+    border-radius: 5px;
+}

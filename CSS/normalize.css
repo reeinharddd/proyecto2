@@ -1,0 +1,664 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*Diseño del mensaje e imagen CREO que solo involucra al index del administrador (HICE UN COPY PASTE, asi que tendran los mismos identificadores)*/
+#welcome-container {
+  display: flex;
+  align-items: start;
+}
+
+#sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 25%;  /* Define el ancho de la barra lateral */
+  padding: 10px;
+}
+
+#welcome-image {
+  width: 100%;  /* La imagen ocupa todo el ancho de la barra lateral */
+  height: auto;
+}
+
+#content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;  /* Asegura que este div ocupe el espacio restante */
+}
+
+#welcome-header {
+  background-color: #f3f1ee;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#main-content {
+  padding-left: 20px;  /* Espaciado entre la imagen y el contenido */
+}
+/*----------------------------------------------------------------------------------------------------*/
+                                    /*Diseño de la tabla del menu*/
+/*----------------------------------------------------------------------------------------------------*/
+
+/* Estilos base para los botones de Editar y Eliminar */
+.actions .edit-btn,
+.actions .delete-btn {
+  display: inline-block;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Efecto de transición al cambiar el color de fondo */
+}
+
+/* Estilo específico para el botón de Editar */
+.actions .edit-btn {
+  background-color: #8bc34a; /* Verde claro */
+  color: white;
+}
+
+/* Estilo específico para el botón de Eliminar */
+.actions .delete-btn {
+  background-color: #ff6659; /* Rojo claro */
+  color: white;
+}
+
+/* Efecto al pasar el mouse por encima del botón de Editar */
+.actions .edit-btn:hover {
+  background-color: #689f38; /* Verde un poco más oscuro */
+}
+
+/* Efecto al pasar el mouse por encima del botón de Eliminar */
+.actions .delete-btn:hover {
+  background-color: #d43f00; /* Rojo un poco más oscuro */
+}
+
+/* Estilos para el contenedor de la tabla para separar de los bordes y centrar */
+.custom-table-container {
+  padding: 0; /* Añade padding alrededor de la tabla */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  max-width: calc(100% - 40px); /* Ajusta la anchura máxima para permitir el padding */
+}
+
+/* Estilos para la tabla, alineados con el diseño de la primera tabla */
+.custom-table {
+  width: 100%; /* Usa todo el ancho del contenedor */
+  border: none; /* Elimina los espacios entre bordes */
+  background-color: #f3f1ee; /* Fondo blanco para la tabla */
+  margin: 20px 0; /* Añade margen superior e inferior para separar de otros elementos */
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 0; /* Espacio interno de las celdas */
+  border-bottom: 1px solid #143658; /* Color de borde gris claro para las filas */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.custom-table th {
+  background-color: #f3f1ee; /* Fondo gris claro para los encabezados */
+  font-weight: bold; /* Texto en negrita para los encabezados */
+}
+
+.custom-table tr:last-child td {
+  border-bottom: none; /* Elimina el borde inferior del último elemento para evitar doble borde */
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f3f1ee; /* Efecto al pasar el ratón sobre las filas */
+}
+
+
+/* Estilos para el botón "Agregar nuevo" */
+.btn-agregar {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4CAF50;  /* Un tono de verde para el botón "Agregar" */
+  color: white;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-left: auto; /* Alinea el botón a la derecha */
+  transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+.cata {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4c75af;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: auto;
+  transition: background-color 0.3s;
+}
+.cata:hover {
+  background-color: #4568a0; 
+}
+
+/*Boton de entregar*/
+.actions .btn-entregar {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgb(200, 113, 27);  /* Un tono de verde para el botón "Agregar" */
+  color: white;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-left: auto; /* Alinea el botón a la derecha */
+  transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+/* Efecto hover para el botón "Agregar nuevo" */
+.btn-agregar:hover {
+   background-color: #45a049; /* Un verde un poco más oscuro para el efecto hover */
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+                                /*Diseño de la tabla de las solicitudes*/
+/*----------------------------------------------------------------------------------------------------*/
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.custom-table th, .custom-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.custom-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+}
+
+.custom-table thead th {
+  background-color: #f0f0f0;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.custom-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+                                                /*GRID del usuario*/
+/*----------------------------------------------------------------------------------------------------*/
+.contenedorGRID {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Espacio entre filas de la cuadrícula */
+}
+
+.cont {
+  flex: 1; /* Los elementos se expanden para ocupar el espacio disponible */
+  margin: 0 10px; /* Espacio entre celdas */
+  background-color: rgb(8, 29, 59); /* Color de fondo de las celdas */
+  color: white; /* Color del texto */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Para la primera fila que tiene 2 celdas */
+.grid:nth-child(1) .cell {
+  width: calc(50% - 20px); /* Se calcula el ancho para 2 celdas con espacio */
+}
+
+/* Para la segunda fila que tiene 3 celdas */
+.grid:nth-child(2) .cell {
+  width: calc(33.333% - 20px); /* Se calcula el ancho para 3 celdas con espacio */
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+                                        /*DISEÑO DEL CATALOGO*/
+/*----------------------------------------------------------------------------------------------------*/
+.menu-catalogo {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  padding: 70px;
+  gap: 89px; /* Añade espacio entre los elementos del menú */
+}
+
+.menu-encaDepa,
+.menu-encaProd,
+.menu-encaUbic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu-encaDepa a,
+.menu-encaProd a,
+.menu-encaUbic a {
+  color: black; /* Ajusta el color según sea necesario */
+  text-decoration: none;
+}
+
+.menu-encaDepa img,
+.menu-encaProd img,
+.menu-encaUbic img {
+  width: auto; /* Permite que la imagen crezca en ancho hasta el máximo permitido */
+  max-width: 320px; /* Aumenta el tamaño máximo de las imágenes si son demasiado pequeñas */
+  height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+.menu-encaDepa span,
+.menu-encaProd span,
+.menu-encaUbic span {
+  display: block; /* Hace que el span se comporte como un elemento de bloque */
+  margin-top: 8px; /* Espacio entre la imagen y el texto */
+}
+/*----------------------------------------------------------------------------------------------------*/
+                                    /*DISEÑO PARA LA SECCION DE GENERAR SOLICITUD*/
+/*----------------------------------------------------------------------------------------------------*/
+.container {
+  max-width: 1200px; /* O el ancho máximo que prefieras */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 20px;
+}
+
+.catalog-section {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+  gap: 90px; /* Espacio entre los elementos */
+}
+
+.req-selection {
+  flex: 5; /* Distribuye el espacio uniformemente entre los elementos */
+  max-width: 50%; /* O el ancho máximo que prefieras para cada selección */
+  display: flex; /* Usa flexbox para estructurar la imagen y el contenido */
+  flex-direction: column; /* Ordena los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.req-selection img {
+  max-width: 75%; /* Las imágenes ocupan todo el ancho disponible */
+  height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+.content {
+  text-align: center; /* Centra el texto dentro del contenido */
+}
+
+.go-to-button {
+  background-color: #008CBA; /* Color de fondo */
+  border-radius: 5px;
+  color: white; /* Color del texto */
+  padding: 5px 10px; /* Espacio interno del botón */
+  text-decoration: none; /* Elimina el subrayado del texto */
+  display: inline-block; /* Hace que el botón sea en línea pero bloque para permitir el padding */
+  margin-top: 5px; /* Espacio por encima del botón */
+  cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+}
+
+.centroNotis {
+  padding-left: 70px;
+}
+
+
+main{
+  margin: 10px;
+}
