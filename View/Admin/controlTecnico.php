@@ -104,22 +104,23 @@ require '../../App/authentication.php';
 		</div>
 
 	</div>
+	<main>
     <h1>Control de Solicitudes Tecnico</h1>
 	<?php include('SolTecnica.php');
 				$miobjeto = new SolTecnica();
 				$dataset = $miobjeto->getAllSolicitudTec();
 			?>
 	<h2>Solicitudes Tecnicas</h2>
-	<table class="custom-table">
+	<table class="containerT">
     	<thead>
         	<tr>
-            	<th>Numero de Solicitud</th>
-            	<th>Fecha de la Solicitud</th>
-            	<th>Estado de la Solicitud</th>
-            	<th>Descripción</th>
-            	<th>Evidencia</th>
-            	<th>Departamento Ubicado</th>
-            	<th>Usuario Solicitante</th>
+            	<th><h1>Numero de Solicitud</h1></th>
+            	<th><h1>Fecha de la Solicitud</h1></th>
+            	<th><h1>Estado de la Solicitud</h1></th>
+            	<th><h1>Descripción</h1></th>
+            	<th><h1>Evidencia</h1></th>
+            	<th><h1>Departamento Ubicado</h1></th>
+            	<th><h1>Usuario Solicitante</h1></th>
     		</tr>
     	</thead>
     	<tbody>
@@ -152,5 +153,6 @@ require '../../App/authentication.php';
         	<?php } ?>
     	</tbody>
 </table>
+</main>
 </body>
 </html>

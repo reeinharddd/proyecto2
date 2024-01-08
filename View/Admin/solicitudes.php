@@ -104,24 +104,25 @@ require '../../App/authentication.php';
 		</div>
 
 	</div>
+	<main>
         <h1>Historico de requisiciones</h1>
 		<?php include('Solicitud.php');
 				$miobjeto = new Solicitud();
 				$dataset = $miobjeto->getAllSolicitud();
 			?>
 		<h2>Solicitudes</h2>
-		<table class="custom-table">
+		<table class="containerT">
     <thead>
         <tr>
-            <th>Numero de Solicitud</th>
-			<th>Fecha de la Solicitud</th>
-			<th>Usuario Solicitante</th>
-            <th>Producto Solicitado</th>
-			<th>Cantidad Requerida</th>
-            <th>Nivel de Prioridad</th>
-            <th>Estado de la Solicitud</th>
-            <th>Motivo</th>
-            <th>Comentarios</th>
+            <th><h1>Numero de Solicitud</h1></th>
+			<th><h1>Fecha de la Solicitud</h1></th>
+			<th><h1>Usuario Solicitante</h1></th>
+            <th><h1>Producto Solicitado</h1></th>
+			<th><h1>Cantidad Requerida</h1></th>
+            <th><h1>Nivel de Prioridad</h1></th>
+            <th><h1>Estado de la Solicitud</h1></th>
+            <th><h1>Motivo</h1></th>
+            <th><h1>Comentarios</h1></th>
         </tr>
     </thead>
     <tbody>
@@ -141,5 +142,6 @@ require '../../App/authentication.php';
         <?php } ?>
     </tbody>
 </table>
+</main>
 </body>
 </html>
