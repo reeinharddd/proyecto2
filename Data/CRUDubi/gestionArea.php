@@ -94,8 +94,9 @@ require '../../App/authentication.php';
 			</script>
 		</div>
         </div>
+		<main class = "mainE">
     <h1>Menu de Gestion de las Areas de Trabajo.</h1>
-	<br>
+	
 	<?php 
 		include ('Area.php');
         $miobjeto = new Area ();
@@ -105,15 +106,18 @@ require '../../App/authentication.php';
 		<h2>Areas de Trabajo.</h2>
 		<br>
 		<a href="agregarArea.php" class="btn-agregar">Agregar nueva Area de Trabajo</a>
-		<table class="custom-table">
+		<table class="containerT">
+			<thead>
     <tr>
-        <th>Numero de Area</th>
-        <th>Nombre del Area </th>
-        <th>Ubicación del Area</th>
-        <th>Departamento al que pertenece</th>
-        <th>Acciones</th>
+        <th><h1>Numero de Area</h1></th>
+        <th><h1>Nombre del Area</h1> </th>
+        <th><h1>Ubicación del Area</h1></th>
+        <th><h1>Departamento al que pertenece</h1></th>
+        <th><h1>Acciones</h1></th>
     </tr>
+	</thead>
     <?php while ($tupla = mysqli_fetch_assoc($dataset)) { ?>
+		<tbody>
 		<tr>
     		<td> <?php echo $tupla['idArea']; ?> </td>
     		<td> <?php echo $tupla['nombre']; ?></td>
@@ -124,8 +128,10 @@ require '../../App/authentication.php';
         		<input type="button" value="Eliminar" onclick="location.href='eliminarArea.php?idArea=<?php echo $tupla['idArea']; ?>'" class="delete-btn">
     		</td>
 		</tr>
+		</tbody>
     <?php } ?>
 </table>
+</main>
 </body>
 </html>
 </html>

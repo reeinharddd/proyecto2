@@ -102,7 +102,9 @@ require '../../App/authentication.php';
 				});
 			</script>
 		</div>
+		
         </div class="enca">
+		<main class = "mainE">
         <h1>Catalogo</h1>
         <h2>Seleccione lo que desea agregar</h2>
 		<div class="menu-catalogo">
@@ -119,5 +121,6 @@ require '../../App/authentication.php';
     			</a>
 			</div>
 		</div>
+		</main>
 </body>
 </html>

@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    background: linear-gradient(45deg, #a3cbe9,  rgba(234, 146, 146, 0.35));
+  }
+  
+  button, input, textarea {
+    font-family: "Source Sans Pro", sans-serif;
+    box-sizing: border-box;
+  }
+  h1{
+    padding-bottom: 100px;
+    text-align: center;
+    
+  }
+  
+  .profile {
+    widtH: 640px;
+    min-width: 640px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.35);
+    position: relative;
+    justify-content: center;
+  }
+  .profile .contact {
+    position: absolute;
+    left: 50%;
+    bottom: -62.5px;
+    transform: translate(-50%, 0%);
+  }
+  .profile .contact.active input[type=text] {
+    top: 5px;
+    transform: translate(-50%, 100%);
+  }
+  .profile .contact button {
+    z-index: 100;
+  }
+  .profile .contact input[type=text] {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+    outline: 0;
+    padding: 9px 15px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+  }
+  .profile .contact input[type=text]:focus {
+    border-color: #8EC0E4;
+  }
+  .profile button {
+    padding: 10px 40px;
+    width: 132px;
+    background: #8EC0E4;
+    border-radius: 30px;
+    border: none;
+    outline: 0;
+    color: white;
+    transition: 0.15s ease-in-out;
+    border: 2px solid #8EC0E4;
+  }
+  /*.profile button:hover {
+    background: #65a9da;
+  }*/
+  .profile .profile-info {
+    widtH: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile .profile-info .info {
+    width: 45%;
+    heighT: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile .profile-info .info a {
+    text-decoration: none;
+    color: black;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    display: block;
+    cursor:default;
+    text-align:start;
+  }
+  .profile .profile-info .info a:hover .tooltip {
+    opacity: 1;
+  }
+  .profile .profile-info .info a .tooltip {
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    border-radius: 25px;
+    background: white;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+  }
+  .profile .profile-info .info a .tooltip .tip {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.35);
+    z-index: -1;
+  }
+  .profile .profile-info .info a .tooltip .person {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin-right: 10px;
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+  }
+  .profile .profile-info .info a .tooltip .person:nth-child(3) {
+    margin-right: 0px;
+  }
+  /*.profile .profile-info .info a:hover span {
+    color: #e95545;
+  }*/
+  .profile .profile-info .info a span {
+    color:rgb(8, 29, 59);
+    font-size: 20px;
+    transition: 0.15s ease-in-out;
+    font-weight: 600;
+    text-align: center;
+    justify-content: left;
+  }
+  .profile .top {
+    widtH: 100%;
+    height: 100px;
+    background:rgb(8, 29, 59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+  }
+  .profile .top p {
+    width: calc(50% - 175px);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .profile .top img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 200px;
+    transform: translate(0, 25px);
+    box-shadow: 0px 0px 10px 4px rgba(255, 255, 255, 0.5);
+  }

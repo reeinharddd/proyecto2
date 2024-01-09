@@ -104,7 +104,7 @@ require '../../App/authentication.php';
 		</div>
 
 	</div>
-	<main>
+	<main class = "mainE">
         <h1>Historico de requisiciones</h1>
 		<?php include('Solicitud.php');
 				$miobjeto = new Solicitud();

@@ -10,7 +10,7 @@ require '../App/authentication.php';
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/indexA.css">
 	<link rel="stylesheet" href="../CSS/sidemenu.css">
 </head>
 <body>
@@ -103,40 +103,63 @@ require '../App/authentication.php';
 		</div>
 	</div>
 	<!--Agregue el mensaje de bienvenida para el usuario que inicio sesion-->
-	<main>
-	<div id="welcome-container">
-    <?php
-	include('../Data/Usuario.php');
-	$miObjeto = new Usuario();
+	<main class = "mainE">
+		<h1>BIENVENIDO DE NUEVO</h1>
+	<div class='profile'>
+        <div class='top'>
+            <?php
+            include ('../Data/Usuario.php');
+            $miObjeto = new Usuario();
 	$departamento = $miObjeto->getNombreDepartamento($_SESSION['departamento']);
 	$rol = $miObjeto->getNombreRol($_SESSION['category']);
     if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
-        echo '<aside id="sidebar">';
-        echo '<img id="welcome-image" src="../img/profiles_pics/'.$_SESSION['profile_pic'].'" alt="Usuario">';
-        echo '</aside>';
-        	echo '<div id="content-wrapper">';
-        	echo '<header id="welcome-header">';
-        		echo '<p id="welcome-message">Iniciaste sesión como Administrador: '.$_SESSION['nick'].' </p>';
-        	echo '</header>';
-        	echo '<main id="main-content">';
-        		echo '<div id="user-data-container">';
-					echo '<div class="contenedorGRID">';
-						echo '<div class="grid">';
-							echo '<div class="cont">Nombre: '.$_SESSION['first_name'].'</div>
-								<div class="cont">Apellido: '.$_SESSION['last_name'].' </div>';
-							echo '</div>';
-							echo '<div class="grid">
-									<div class="cont"> Correo Electronico: '.$_SESSION['mail'].' </div>
-									<div class="cont"> Número Telefónico: '.$_SESSION['numeroTel'].' </div>
-									<div class="cont"> Rol: '.$rol.' </div>
-									<div class="cont"> Departamento: '.$departamento.' </div>
-							</div>';
-						echo '</div>';
-        	echo '</main>';
+        
+           echo  '<p>'.$_SESSION['first_name'].'</p>';
+           echo  '<img src="../img/profiles_pics/'.$_SESSION['profile_pic'].'" alt="Usuario"  />';
+            echo '<p>'.$_SESSION['last_name'].'</p>';
         echo '</div>';
+       echo '<div class="profile-info">';
+            echo '<div class="info followers">';
+                echo '<a href="#">';
+                   echo  ' <span>'.$departamento.'</span>';
+                   
+               echo  '</a>';
+            echo '</div>';
+           echo '<div class="info following">';			
+                echo '<a href="#">';
+                    echo '<span>'.$_SESSION['mail'].'</span>';
+                   
+                echo '</a>';
+            echo '</div>';
+        echo '</div>';
+        echo '<div class="contact">';
+            echo '<button>Rol: <span>'.$rol.'</span></button>';
+            echo  '</div>';	
+    echo '</div>';
     }
-    ?>
-</div>
+    ?>	
 </main>
+<script>
+$(".profile").find(".contact").find("button").on('click', function(e){
+	e.preventDefault();
+	
+	if ($(this).hasClass("active")){
+		$(this).removeClass("active")
+		$(this).find("span").fadeOut(150, function(){
+			$(this).text("Contact")
+			$(this).fadeIn(150)
+		});
+		$(this).parent(".contact").removeClass("active")
+	}else{
+		$(this).addClass("active")
+		$(this).find("span").fadeOut(150, function(){
+			$(this).text("Back")
+			$(this).fadeIn(150)
+		});
+		$(this).parent(".contact").addClass("active")
+	}
+	
+});
+</script>
 </body>
 </html>

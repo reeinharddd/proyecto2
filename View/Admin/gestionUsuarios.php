@@ -95,8 +95,9 @@ require '../../App/authentication.php';
 		</div>
 
 	</div>
+	<main class = "mainE">
     <h1>Menu de Gestion de Usuarios</h1>
-	<br>
+	
 	<?php include ('../../Data/Usuario.php'); ?>
             <?php $miobjeto = new Usuario (); ?>
             <?php $dataset = $miobjeto->getAllUsuario(); 
@@ -104,19 +105,22 @@ require '../../App/authentication.php';
 		<h2>Usuarios registrados.</h2>
 		<br>
 		<a href="../../Data/agregarUsuario.php" class="btn-agregar">Agregar nuevo</a>
-			<table class="custom-table">
+			<table class="containerT">
+				<thead>
     		<tr>
-        		<th>ID</th>
-        		<th>Nombre</th>
-        		<th>Apellido</th>
-        		<th>Correo</th>
-        		<th>Numero de Telefono</th>
-        		<th>Nickname</th>
-        		<th>Estado del Usuario</th>
-        		<th>Categoria</th>
-        		<th>Departamento</th>
-        		<th>Acciones</th>
+        		<th><h1>ID</h1></th>
+        		<th><h1>Nombre</h1></th>
+        		<th><h1>Apellido</h1></th>
+        		<th><h1>Correo</h1></th>
+        		<th><h1>Numero de Telefono</h1></th>
+        		<th><h1>Nickname</h1></th>
+        		<th><h1>Estado del Usuario</h1></th>
+        		<th><h1>Categoria</h1></th>
+        		<th><h1>Departamento</h1></th>
+        		<th><h1>Acciones</h1></th>
     	</tr>
+		</thead>
+		<tbody>
 			<?php while ($tupla = mysqli_fetch_assoc($dataset)) {
         		$idUser = $tupla['user_id'];
         		echo "<tr>";
@@ -137,6 +141,8 @@ require '../../App/authentication.php';
 					echo "</td>";
 				echo "</tr>";
 					}?>
+					</tbody>
 		</table>
+		</main>
 </body>
 </html>

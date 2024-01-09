@@ -104,7 +104,7 @@ require '../../App/authentication.php';
 		</div>
 
 	</div>
-	<main>
+	<main class = "mainE">
     <h1>Control de Solicitudes Tecnico</h1>
 	<?php include('SolTecnica.php');
 				$miobjeto = new SolTecnica();

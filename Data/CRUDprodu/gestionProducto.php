@@ -93,6 +93,7 @@ require '../../App/authentication.php';
 			</script>
 		</div>
         </div>
+		<main class = "mainE">
     <h1>Menu de Gestion de Productos/Servicios</h1>
 	<br>
 	<?php include ('Producto.php'); ?>
@@ -102,16 +103,18 @@ require '../../App/authentication.php';
 		<h2>Almacen.</h2>
 		<br>
 		<a href="agregarProducto.php" class="btn-agregar">Agregar nuevo Producto/Servicio</a>
-		<table class="custom-table">
+		<table class="containerT">
+			<thead>
     <tr>
-        <th>Numero de Producto</th>
-        <th>Nombre del Producto </th>
-        <th>Descripción del Producto</th>
-		<th>Tipo de Producto</th>
-        <th>Categoria del Producto</th>
-        <th>Departamento del Producto</th>
-		<th>Acciones</th>
+        <th><h1>Numero de Producto</h1></th>
+        <th><h1>Nombre del Producto</h1> </th>
+        <th><h1>Descripción del Producto</h1></th>
+		<th><h1>Tipo de Producto</h1></th>
+        <th><h1>Categoria del Producto</h1></th>
+        <th><h1>Departamento del Producto</h1></th>
+		<th><h1>Acciones</h1></th>
     </tr>
+	</thead>
     <?php while ($tupla = mysqli_fetch_assoc($dataset)) { ?>
 		<?php
 			switch ($tupla['idCatProducto']) {
@@ -145,7 +148,7 @@ require '../../App/authentication.php';
 						$catProdu = "Departamento no registrado";
 						break;
 			}?>
-			
+			<tbody>
 		<tr>
     		<td> <?php echo $tupla['idProducto']; ?> </td>
     		<td> <?php echo $tupla['nomProducto'];  ?></td>
@@ -158,8 +161,10 @@ require '../../App/authentication.php';
         		<input type="button" value="Eliminar" onclick="location.href='eliminarProducto.php?idProducto=<?php echo $tupla['idProducto']; ?>'" class="delete-btn">
     		</td>
 		</tr>
+		</tbody>
     <?php } ?>
 </table>
+</main>
 </body>
 </html>
 </html>

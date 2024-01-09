@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -62,7 +64,7 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 1em; /* 2 */
 }
 
@@ -105,7 +107,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 1em; /* 2 */
 }
 
@@ -414,12 +416,32 @@ template {
 
 /* Efecto al pasar el mouse por encima del botón de Editar */
 .actions .edit-btn:hover {
-  background-color: #689f38; /* Verde un poco más oscuro */
+  background-color: rgb(167, 244, 99);
+color: #101e40;
+font-weight: bold;
+
+box-shadow:  #8bc34a -1px 1px, #8bc34a -2px 2px, #8bc34a -3px 3px,#8bc34a -4px 4px, #8bc34a -5px 5px, #8bc34a -6px 6px;
+transform: translate3d(6px, -6px, 0);
+
+transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+transition-timing-function: line;
 }
 
 /* Efecto al pasar el mouse por encima del botón de Eliminar */
 .actions .delete-btn:hover {
-  background-color: #d43f00; /* Rojo un poco más oscuro */
+  background-color: #fa7f74;
+  color: #101e40;
+  font-weight: bold;
+  
+  box-shadow: #ff6659 -1px 1px, #ff6659 -2px 2px,#ff6659 -3px 3px,#ff6659 -4px 4px,#ff6659 -5px 5px, #ff6659 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  
+  transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+  transition-timing-function: line;
 }
 
 /* Estilos para el contenedor de la tabla para separar de los bordes y centrar */
@@ -462,12 +484,13 @@ template {
 .btn-agregar {
   display: inline-block;
   padding: 8px 16px;
-  background-color: #4CAF50;  /* Un tono de verde para el botón "Agregar" */
+  background-color: #8bc34a;  /* Un tono de verde para el botón "Agregar" */
   color: white;
   text-decoration: none; /* Elimina el subrayado del enlace */
   border-radius: 5px; /* Bordes redondeados */
   margin-left: auto; /* Alinea el botón a la derecha */
   transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+  margin-bottom: 15px;
 }
 .cata {
   display: inline-block;
@@ -480,8 +503,17 @@ template {
   transition: background-color 0.3s;
 }
 .cata:hover {
-  background-color: #4568a0; 
-}
+  background-color: #729edd;
+  color: #101e40;
+  font-weight: bold;
+  
+  box-shadow:  #4c75af -1px 1px, #4c75af -2px 2px, #4c75af -3px 3px,#4c75af -4px 4px, #4c75af -5px 5px, #4c75af -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  
+  transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+  transition-timing-function: line;}
 
 /*Boton de entregar*/
 .actions .btn-entregar {
@@ -497,8 +529,17 @@ template {
 
 /* Efecto hover para el botón "Agregar nuevo" */
 .btn-agregar:hover {
-   background-color: #45a049; /* Un verde un poco más oscuro para el efecto hover */
-}
+  background-color: rgb(167, 244, 99);
+  color: #101e40;
+  font-weight: bold;
+  
+  box-shadow:  #8bc34a -1px 1px, #8bc34a -2px 2px, #8bc34a -3px 3px,#8bc34a -4px 4px, #8bc34a -5px 5px, #8bc34a -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  
+  transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+  transition-timing-function: line;}
 
 /*----------------------------------------------------------------------------------------------------*/
                                 /*Diseño de la tabla de las solicitudes*/
@@ -659,9 +700,14 @@ template {
 }
 
 
-main{
-  margin: 15px;
+.mainE{
+  margin: 20px;
 }
+
+.mainE h1, .mainE h2 {
+  text-align: center;
+}
+
 
 /*///////////////////////////////////////////////////////////////////////////////////*/
 
