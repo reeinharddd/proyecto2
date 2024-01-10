@@ -696,7 +696,8 @@ transition-timing-function: line;
 }
 
 .centroNotis {
-  padding-left: 70px;
+  justify-content: center;
+  text-align: center;
 }
 
 .centroNotis h1 {
@@ -761,7 +762,7 @@ padding: 0 0 5em 0;
 .containerT td:first-child { color: #FB667A; }
 
 .containerT tr:hover {
- background-color: #848d9e;
+ background-color: #b6bfd0;
 -webkit-box-shadow: 0 6px 6px -6px #0E1119;
    -moz-box-shadow: 0 6px 6px -6px #0E1119;
         box-shadow: 0 6px 6px -6px #0E1119;
