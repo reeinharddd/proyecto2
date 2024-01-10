@@ -102,16 +102,17 @@ require '../../App/authentication.php';
 		</div>
 
 	</div>
+	<main class = "mainE">
     <h1>Historial de Solicitudes Generadas</h1>
-	<table class="custom-table">
+	<table class="containerT">
 		<tr>
-			<th>No.</th>
-			<th>Fecha de Creación</th>
-			<th>Producto / Servicio</th>
-			<th>Motivo</th>
-			<th>Comentario</th>
-			<th>Estado</th>
-			<th title="Despues de un lapso de 7 días la solicitud podrá ser renovada">Volver a notificar</th>
+			<th><h1>No.</h1></th>
+			<th><h1>Fecha de Creación</h1></th>
+			<th><h1>Producto / Servicio</h1></th>
+			<th><h1>Motivo</h1></th>
+			<th><h1>Comentario</h1></th>
+			<th><h1>Estado</h1></th>
+			<th title="Despues de un lapso de 7 días la solicitud podrá ser renovada"><h1>Volver a notificar</h1></th>
 		</tr>
 			<?php
 			include('../../Data/Usuario.php');
@@ -204,15 +205,15 @@ require '../../App/authentication.php';
 			?>
 			</table>
 			<h1>Historial de Solicitudes Técnicas en Curso</h1>
-			<table class="custom-table">
+			<table class="containerT">
 		<tr>
-			<th>No.</th>
-			<th>Fecha de Creación</th>
-			<th>Área</th>
-			<th>Motivo</th>
-			<th>Estado</th>
-			<th>Acción</th>
-			<th title="Despues de un lapso de 7 días la solicitud podrá ser renovada">Volver a notificar</th>
+			<th><h1>No.</h1></th>
+			<th><h1>Fecha de Creación</h1></th>
+			<th><h1>Área</h1></th>
+			<th><h1>Motivo</h1></th>
+			<th><h1>Estado</h1></th>
+			<th><h1>Acción</h1></th>
+			<th title="Despues de un lapso de 7 días la solicitud podrá ser renovada"><h1>Volver a notificar</h1></th>
 		</tr>
 			<?php
 			$miObjeto = new Usuario();
@@ -308,13 +309,13 @@ require '../../App/authentication.php';
 			?>
 			</table>
 			<h1>Historial de Solicitudes Técnicas Cerradas</h1>
-			<table class="custom-table">
+			<table class="containerT">
 		<tr>
-			<th>No.</th>
-			<th>Fecha de Creación</th>
-			<th>Área</th>
-			<th>Motivo</th>
-			<th>Estado</th>
+			<th><h1>No.</h1></th>
+			<th><h1>Fecha de Creación</h1></th>
+			<th><h1>Área</h1></th>
+			<th><h1>Motivo</h1></th>
+			<th><h1>Estado</h1></th>
 		</tr>
 			<?php
 			$dataset = $miObjeto->getHistorialSolicitudesTech($_SESSION['user_id']);
@@ -338,5 +339,6 @@ require '../../App/authentication.php';
 				}
 			}
 		?>
+		</main>
 </body>
 </html>

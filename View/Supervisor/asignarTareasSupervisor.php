@@ -115,20 +115,21 @@ include("../../Data/Usuario.php");
 		
 
 	</div>
+	<main class = "mainE">
     <h1>Asignación de tareas soporte técnico</h1>
-	<table class="custom-table">
+	<table class="containerT">
 	<thead>
 		<tr>
-		    <th>No.</th>
-			<th>Fecha</th>
-			<th>Descripción</th>
-			<th>Ubicación</th>
-			<th>Departamento</th>
-			<th>Usuario Solicitante</th>
-			<th>Evidencia</th>
-			<th>Estado</th>
-			<th>Asignar Técnico</th>
-			<th colspan="2">Acciones</th>
+		    <th><h1>No.</h1></th>
+			<th><h1>Fecha</h1></th>
+			<th><h1>Descripción</h1></th>
+			<th><h1>Ubicación</h1></th>
+			<th><h1>Departamento</h1></th>
+			<th><h1>Usuario Solicitante</h1></th>
+			<th><h1>Evidencia</h1></th>
+			<th><h1>Estado</h1></th>
+			<th><h1>Asignar Técnico</h1></th>
+			<th></th><h1>Acciones</h1></th>
 		</tr>
 			</thead>
 		<?php
@@ -208,6 +209,7 @@ include("../../Data/Usuario.php");
 		<button id="cerrarPopUpDenegar">Cancelar</button>
 	</div>
 	</table>
+	</main>
 	<script>
 		const mostrarPopUpAprobar = document.querySelectorAll(".edit-btn");
 		const popUpAprobar = document.getElementById("popUpAprobar");

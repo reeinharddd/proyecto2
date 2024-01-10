@@ -101,6 +101,7 @@ require '../../App/authentication.php';
 		</div>
 
 	</div>
+	<main class = "mainE">
     <h1>Mi Área</h1>
 	<h2>Solicitudes entrantes</h2>
 	<?php
@@ -108,20 +109,20 @@ require '../../App/authentication.php';
     $miobjeto = new Requisicion();
 	$idDepartamento = $_SESSION['departamento'];
     $dataset = $miobjeto->getSolicitudesPorDepa($idDepartamento); ?>
-	<table class="custom-table">
+	<table class="containerT">
     <tr>
-        <th>Número de Solicitud</th>
-        <th>Fecha de Creación</th>
-        <th>Estado de la Solicitud</th>
-        <th>Motivo</th>
-        <th>Comentario</th>
-        <th>Usuario Solicitante</th>
-        <th>Producto Solicitado</th>
+        <th><h1>Número de Solicitud</h1></th>
+        <th><h1>Fecha de Creación</h1></th>
+        <th><h1>Estado de la Solicitud</h1></th>
+        <th><h1>Motivo</h1></th>
+        <th><h1>Comentario</h1></th>
+        <th><h1>Usuario Solicitante</h1></th>
+        <th><h1>Producto Solicitado</h1></th>
 		<?php if ($idDepartamento == 2) {?>
-	    <th>Cantidad</th>
+	    <th><h1>Cantidad</h1></th>
 		<?php } ?>
-        <th>Prioridad de la Solicitud</th>
-		<th>Acciones</th>
+        <th><h1>Prioridad de la Solicitud</h1></th>
+		<th><h1>Acciones</h1></th>
 	</tr>
     <?php
 	while($tupla = mysqli_fetch_assoc($dataset)) {
@@ -162,20 +163,20 @@ require '../../App/authentication.php';
 	</table>
 	</div>
 	<h2>En curso</h2>
-	<table class="custom-table">
+	<table class="containerT">
     <tr>
-        <th>Número de Solicitud</th>
-        <th>Fecha de Creación</th>
-        <th>Estado de la Solicitud</th>
-        <th>Motivo</th>
-        <th>Comentario</th>
-        <th>Usuario Solicitante</th>
-        <th>Producto Solicitado</th>
+        <th><h1>Número de Solicitud</h1></th>
+        <th><h1>Fecha de Creación</h1></th>
+        <th><h1>Estado de la Solicitud</h1></th>
+        <th><h1>Motivo</h1></th>
+        <th><h1>Comentario</h1></th>
+        <th><h1>Usuario Solicitante</h1></th>
+        <th><h1>Producto Solicitado</h1></th>
 		<?php if ($idDepartamento == 2) {?>
-	    <th>Cantidad</th>
+	    <th><h1>Cantidad</h1></th>
 		<?php } ?>
-        <th>Prioridad de la Solicitud</th>
-		<th>Acciones</th>
+        <th><h1>Prioridad de la Solicitud</h1></th>
+		<th><h1>Acciones</h1></th>
 	</tr>
     <?php
 	$dataset = $miobjeto->getSolicitudesPorDepa($idDepartamento); 
@@ -237,5 +238,6 @@ require '../../App/authentication.php';
 }
 ?>
 </table>
+</main>
 </body>
 </htm

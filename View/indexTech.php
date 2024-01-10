@@ -13,6 +13,7 @@ require '../App/authentication.php';
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/normalize.css">
 	<link rel="stylesheet" href="../CSS/sidemenu.css">
+	<link rel="stylesheet" href="../CSS/indexA.css">
 </head>
 <body>
 	<div id="sidemenu" class="menu-collapsed">
@@ -93,44 +94,50 @@ require '../App/authentication.php';
 			</script>
 		</div>
 	</div>
-		<!--Agregue el mensaje de bienvenida para el usuario que inicio sesion-->
-		<div id="welcome-container">
-    <?php
-	include('../Data/Usuario.php');
-	$miObjeto = new Usuario();
+	<main class = "mainE">
+		<h1>BIENVENIDO DE NUEVO</h1>
+	<div class='profile'>
+        <div class='top'>
+            <?php
+            include ('../Data/Usuario.php');
+            $miObjeto = new Usuario();
 	$departamento = $miObjeto->getNombreDepartamento($_SESSION['departamento']);
 	$rol = $miObjeto->getNombreRol($_SESSION['category']);
-    if (isset($_SESSION['logged']) && $_SESSION['logged'] === true){
-		echo '<aside id="sidebar">';
-        echo '<img id="welcome-image" src="../img/profiles_pics/'.$_SESSION['profile_pic'].'" alt="Usuario">';
-        echo '</aside>';
-        	echo '<div id="content-wrapper">';
-        	echo '<header id="welcome-header">';
-        		echo '<p id="welcome-message">Iniciaste sesión como Tecnico: ' . $_SESSION['nick'] . '</p>';
-        	echo '</header>';
-        	echo '<main id="main-content">';
-        		echo '<div id="user-data-container">';
-				echo '<div class="contenedorGRID">';
-				echo '<div class="grid">';
-					echo '<div class="cont">Nombre: '.$_SESSION['first_name'].'</div>
-						<div class="cont">Apellido: '.$_SESSION['last_name'].' </div>';
-					echo '</div>';
-					echo '<div class="grid">
-							<div class="cont"> Correo Electronico: '.$_SESSION['mail'].' </div>
-							<div class="cont"> Número Telefónico: '.$_SESSION['numeroTel'].' </div>
-							<div class="cont"> Rol: '.$rol.' </div>
-							<div class="cont"> Departamento: '.$departamento.' </div>
-					</div>';
-				echo '</div>';
-				echo '<div class="centroNotis">';
-				echo '<h1>Centro de Notificaciones</h1>';?>
-				<table class="custom-table">
+    if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
+        
+           echo  '<p>'.$_SESSION['first_name'].'</p>';
+           echo  '<img src="../img/profiles_pics/'.$_SESSION['profile_pic'].'" alt="Usuario"  />';
+            echo '<p>'.$_SESSION['last_name'].'</p>';
+        echo '</div>';
+       echo '<div class="profile-info">';
+            echo '<div class="info followers">';
+                echo '<a href="#">';
+                   echo  ' <span>'.$departamento.'</span>';
+                   
+               echo  '</a>';
+            echo '</div>';
+           echo '<div class="info following">';			
+                echo '<a href="#">';
+                    echo '<span>'.$_SESSION['mail'].'</span>';
+                   
+                echo '</a>';
+            echo '</div>';
+        echo '</div>';
+        echo '<div class="contact">';
+            echo '<button>Rol: <span>'.$rol.'</span></button>';
+            echo  '</div>';	
+    echo '</div>';
+    }
+    ?>
+				<div class="centroNotis">
+				<h1>Centro de Notificaciones</h1>
+				<table class="containerT">
 				<tr>
-					<th>No.</th>
-					<th>Asunto</th>
-					<th>Estado</th>
-					<th>Fecha</th>
-					<th>Remitente</th>
+					<th><h1>No.</h1></th>
+					<th><h1>Asunto</h1></th>
+					<th><h1>Estado</h1></th>
+					<th><h1>Fecha</h1></th>
+					<th><h1>Remitente</h1></th>
 				</tr>
 				<?php
 				$i = 0;
@@ -148,7 +155,7 @@ require '../App/authentication.php';
         		echo '</div>';
         	echo '</main>';
         echo '</div>';
-    }
+    
     ?>
 </div>
 </body>

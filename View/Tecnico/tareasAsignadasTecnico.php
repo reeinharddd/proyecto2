@@ -96,22 +96,23 @@ require '../../App/authentication.php';
 		</div>
 
 	</div>
+	<main class = "mainE">
     <h1>Tareas Asignadas</h1>
     <?php include('../../Data/Requisicion.php');
 				$miobjeto = new Requisicion();
 				$dataset = $miobjeto->getSolicitudAsignada();
 			?>
 		<h2>Solicitudes</h2>
-		<table class="custom-table">
+		<table class="containerT">
     <thead>
         <tr>
-            <th>Numero de Solicitud</th>
-			<th>Fecha de Solicitud</th>
-			<th>Ubicación</th>
-			<th>Solicitante</th>
-			<th>Descripción</th>
-			<th>Fotografía</th>
-			<th>Acciones</th>
+            <th><h1>Numero de Solicitud</h1></th>
+			<th><h1>Fecha de Solicitud</h1></th>
+			<th><h1>Ubicación</h1></th>
+			<th><h1>Solicitante</h1></th>
+			<th><h1>Descripción</h1></th>
+			<th><h1>Fotografía</h1></th>
+			<th><h1>Acciones</h1></th>
         </tr>
     </thead>
     <tbody>
@@ -155,5 +156,6 @@ require '../../App/authentication.php';
         ?>
     </tbody>
 </table>
+</main>
 </body>
 </html>

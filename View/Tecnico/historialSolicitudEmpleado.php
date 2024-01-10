@@ -96,6 +96,7 @@ require '../../App/authentication.php';
 		</div>
 
 	</div>
+	<main class = "mainE">
     <h1>Historial de Solicitudes</h1>
 	<?php include('../../Data/Requisicion.php');
 		$miobjeto = new Requisicion();
@@ -103,18 +104,18 @@ require '../../App/authentication.php';
 	?>
 <div class="solicitudes-container">
     <h3>Solicitudes Completadas</h3>
-    <table class="custom-table">
+    <table class="containerT">
     <thead>
         <tr>
-            <th>Numero de Solicitud</th>
-			<th>Fecha de Solicitud</th>
-			<th>Descripción</th>
-			<th>Ubicación</th>
-			<th>Departamento</th>
-			<th>Solicitante</th>
-			<th>Estado</th>
-			<th>Fecha Resolucion</th>
-			<th>Fecha Fin</th>
+            <th><h1>Numero de Solicitud</h1></th>
+			<th><h1>Fecha de Solicitud</h1></th>
+			<th><h1>Descripción</h1></th>
+			<th><h1>Ubicación</h1></th>
+			<th><h1>Departamento</h1></th>
+			<th><h1>Solicitante</h1></th>
+			<th><h1>Estado</h1></th>
+			<th><h1>Fecha Resolucion</h1></th>
+			<th><h1>Fecha Fin</h1></th>
         </tr>
     </thead>
     <tbody>
@@ -144,18 +145,18 @@ require '../../App/authentication.php';
 ?>
 <div class="solicitudes-container">
     <h3>Solicitudes en Revisión</h3>
-    <table class="custom-table">
+    <table class="containerT">
     <thead>
         <tr>
-		    <th>Numero de Solicitud</th>
-			<th>Fecha de Solicitud</th>
-			<th>Descripción</th>
-			<th>Ubicación</th>
-			<th>Departamento</th>
-			<th>Solicitante</th>
-			<th>Estado</th>
-			<th>Fecha Resolucion</th>
-			<th>Fecha Fin</th>
+		    <th><h1>Numero de Solicitud</h1></th>
+			<th><h1>Fecha de Solicitud</h1></th>
+			<th><h1>Descripción</h1></th>
+			<th><h1>Ubicación</h1></th>
+			<th><h1>Departamento</h1></th>
+			<th><h1>Solicitante</h1></th>
+			<th><h1>Estado</h1></th>
+			<th><h1>Fecha Resolucion</h1></th>
+			<th><h1>Fecha Fin</h1></th>
         </tr>
     </thead>
     <tbody>
@@ -186,5 +187,6 @@ require '../../App/authentication.php';
 		?>
     </table>
 </div>
+</main>
 </body>
 </html>

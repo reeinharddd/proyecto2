@@ -102,7 +102,7 @@ require '../../App/authentication.php';
 		</div>
 
 	</div>
-
+<main class = "mainE">
 	<!-- Aqui inicia el contenido de la pagina --->
     <h1>Genera una solicitud</h1>
     <!--Cada div es el inicio de un segmento de tipo de requisicion para dirigir hacia la pantalla de solicitud-->
@@ -116,7 +116,7 @@ require '../../App/authentication.php';
       <div class="content">
         <h2>Suministros:</h2>
         <p>Esta categoría abarca todos los insumos y elementos necesarios para tu comodidad y seguridad en el trabajo. Aquí puedes solicitar desde equipo de protección personal hasta herramientas y productos de limpieza.</p>
-        <a href="../General/formGeneralReqSupplies.php" class="go-to-button">Solicitar</a>
+        <a href="../General/formGeneralReqSupplies.php" class="cata">Solicitar</a>
       </div>
     </div>
     <!-- Sección de Tramite de Documentos -->
@@ -125,7 +125,7 @@ require '../../App/authentication.php';
       <div class="content">
         <h2>Tramite de Documentos:</h2>
         <p>¿Necesitas trámites o documentos relacionados con tu empleo o la empresa? Esta categoría está diseñada para solicitar todo tipo de documentos, desde identificaciones y permisos hasta certificados y formularios internos.</p>
-        <a href="../General/formGeneralReqDocs.php" class="go-to-button">Solicitar</a>
+        <a href="../General/formGeneralReqDocs.php" class="cata">Solicitar</a>
       </div>
     </div>
     <!-- Sección de Mantenimiento -->
@@ -134,11 +134,11 @@ require '../../App/authentication.php';
       <div class="content">
         <h2>Mantenimiento:</h2>
         <p>Si es de carácter técnico o necesitas servicios de reparación, esta categoría es tu punto de partida. Desde solicitar mantenimiento para equipos y maquinaria hasta servicios especializados, aquí puedes abordar cualquier necesidad técnica que tengas en tu área de trabajo.</p>
-        <a href="../General/formGeneralReqTech.php" class="go-to-button">Solicitar</a>
+        <a href="../General/formGeneralReqTech.php" class="cata">Solicitar</a>
       </div>
     </div>
   </div>
 </div>
-
+</main>
 </body>
 </html>

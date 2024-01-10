@@ -101,18 +101,19 @@ require '../../App/authentication.php';
 		</div>
 
 	</div>
-    <h1>Notificaciones</h1>
+	<main class = "mainE">
+		    <h1>Notificaciones</h1>
     <?php include("../../Data/Usuario.php");
 	$miobjeto = new Usuario();
 	$user_id = $_SESSION['user_id'];
 	$dataset = $miobjeto->getNotificaciones($user_id); ?>
-	<table class="custom-table">
+	<table class="containerT">
     <tr>
-        <th>No.</th>
-        <th>Asunto</th>
-        <th>Fecha</th>
-		<th>Remitente</th>
-        <th>Destinatario</th>
+        <th><h1>No.</h1></th>
+        <th><h1>Asunto</h1></th>
+        <th><h1>Fecha</h1></th>
+		<th><h1>Remitente</h1></th>
+        <th><h1>Destinatario</h1></th>
     </tr>
     <?php
 	while ($tupla = mysqli_fetch_assoc($dataset)) { 
@@ -125,5 +126,7 @@ require '../../App/authentication.php';
     		<td> <?php echo $miobjeto->getNombreCompletoUsuario($tupla['idRemitente']); ?></td>
     		<td> <?php echo $miobjeto->getNombreCompletoUsuario($tupla['idDestinatario']); ?></td>
 	<?php }?>
+	</main>
+
 </body>
 </html>

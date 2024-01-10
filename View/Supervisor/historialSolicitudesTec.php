@@ -102,20 +102,21 @@ require '../../App/authentication.php';
 		
 
 	</div>
+	<main class = "mainE">
     <h1>Historial General de Solicitudes Técnicas</h1>
-	<table class="custom-table">
+	<table class="containerT">
 	<thead>
     	<tr>
-        	<th>Numero de Solicitud</th>
-        	<th>Fecha de Solicitud</th>
-        	<th>Descripción</th>
-        	<th>Ubicación</th>
-			<th>Departamento</th>
-        	<th>Técnico Asignado</th>
-        	<th>Usuario Solicitante</th>
-			<th>Estado</th>
-			<th>Fecha de Resolucion</th>
-			<th>Fecha de Terminado</th>
+        	<th><h1>Numero de Solicitud</h1></th>
+        	<th><h1>Fecha de Solicitud</h1></th>
+        	<th><h1>Descripción</h1></th>
+        	<th><h1>Ubicación</h1></th>
+			<th><h1>Departamento</h1></th>
+        	<th><h1>Técnico Asignado</h1></th>
+        	<th><h1>Usuario Solicitante</h1></th>
+			<th><h1>Estado</h1></th>
+			<th><h1>Fecha de Resolucion</h1></th>
+			<th><h1>Fecha de Terminado</h1></th>
 			<th>
     	</tr>
 	</thead>
@@ -157,6 +158,7 @@ require '../../App/authentication.php';
 					}
 		?>
 	</table>
+	</main>
 </div>
 </body>
 </html>
